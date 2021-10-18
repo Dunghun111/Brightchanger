@@ -6,8 +6,7 @@ import sys
 if os.getuid() == 0:
     if '3.' in python_version():
         bright_in_usr = 0
-        print('Remember to run this programme in root :).')
-        print('This programme only support linux, unix.')
+        print('This programme only support linux, MacOS.')
         dir_check = os.listdir('/usr/bin/')
         for i in dir_check:
             brightchanger_test = i
@@ -28,7 +27,7 @@ if os.getuid() == 0:
             pass
 
         if sys.platform.startswith('darwin'):
-            print('W: You\'re starting with unix, this programme may not fully support.')
+            print('W: You\'re starting with MacOS, this programme may not fully support.')
             print('''CN: Make sure you have install \'brightness\' package from Homebrew
 If not, then install here: \'https://brew.sh/\'.
 Then run: \'brew install brightness\'.''')  # Critical Note
