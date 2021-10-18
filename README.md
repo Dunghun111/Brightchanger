@@ -17,7 +17,7 @@ Run:
 
     sudo python3 brightcatcher.py
 
-    Or: Brightchanger (after copy it python file to /usr/bin)
+    Or: Brightchanger (after copy it python file to /usr/bin. Note: For linux only.)
     
     
 (Maybe it have some grammar or vocalbulary error or wrong knowledge so please point it out in 'Issue'.)
