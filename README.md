@@ -11,7 +11,7 @@ For Linux:
 
 For MacOS:
     
-    git clone https://github.com/Dunghun111/Brightchanger.git /Users/[Your username here]/brightchanger
+    git clone https://github.com/Dunghun111/Brightchanger.git
     
 Run:
 
