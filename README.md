@@ -1,23 +1,15 @@
 # Brightchanger
-A python programme that can change your screen brightness as much as you want.
+A python programme that can change your screen brightness and gamma.
 
-Note: This programme only support linux and unix.
+Note: This programme only support Linux.
 
-Usage
-
-For Linux:
+Installation:
 
     git clone https://github.com/Dunghun111/Brightchanger.git ~/brightchanger
-
-For MacOS:
-    
-    git clone https://github.com/Dunghun111/Brightchanger.git
-    
+  
 Run:
-
-    sudo python3 brightcatcher.py
-
-    Or: Brightchanger (After copy it python file to /usr/bin. Note: For linux only.)
+    
+    sudo python3 main.py
     
     
 (Maybe it have some grammar or vocalbulary error or wrong knowledge so please point it out in 'Issue'.)
