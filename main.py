@@ -90,7 +90,7 @@ try:
                 print('''
 [Option]   [Explain]
 HW       : Change brightness in hardware level (change display brightness).
-GAMMA    : Change gamma.
+GAMMA    : Change gamma. (I mean brightness)
 RGB      : Change RGB light (like the light change when use "Night mode" in Windows) when output.
 IMPORT   : Import a save file.
 EXPORT   : Export settings to a save file.
@@ -184,8 +184,7 @@ monitor = {monitor_file}''')
                 make_saved_file.close()
 
             if usr_input.lower() == 'execute':
-                ChangeBrighter.Change_Bright_Gamma(display=curr_display, brigntness_level=gamma)
-                ChangeBrighter.Change_RGB_Color(display=curr_display, r=r_light, g=g_light, b=b_light,)
+                ChangeBrighter.Special_layout(display=curr_display, r= r_light, g= g_light, b= b_light, brigntness_level=gamma)
                 ChangeBrighter.Change_Bright_HW(monitor_driver=monitor_file, brightness_value=brightness)
 
             if usr_input.lower() == 'current':
