@@ -15,5 +15,5 @@ def Change_RGB_Color(r, g, b, display):
     os.system(f'xrandr --output {display} --gamma {r}:{g}:{b}')
 
 # Special layout
-def Special_layout(brigntness_level, r, g, b, display)
+def Special_layout(brigntness_level, r, g, b, display):
     os.system(f'xrandr --output {display} --gamma {r}:{g}:{b} --brightness {brigntness_level}')
