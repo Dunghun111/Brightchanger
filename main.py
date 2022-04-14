@@ -184,9 +184,12 @@ monitor = {monitor_file}''')
                 make_saved_file.close()
 
             if usr_input.lower() == 'execute':
-                ChangeBrighter.Special_layout(display=curr_display, r= r_light, g= g_light, b= b_light, brigntness_level=gamma)
-                ChangeBrighter.Change_Bright_HW(monitor_driver=monitor_file, brightness_value=brightness)
-
+                try:
+                    ChangeBrighter.Special_layout(display=curr_display, r= r_light, g= g_light, b= b_light, brigntness_level=gamma)
+                    ChangeBrighter.Change_Bright_HW(monitor_driver=monitor_file, brightness_value=brightness)
+                except PermissionError as some_error:
+                    pass
+                    
             if usr_input.lower() == 'current':
                 print(f'''Current:
 
